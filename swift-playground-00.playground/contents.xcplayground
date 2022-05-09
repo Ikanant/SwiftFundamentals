@@ -3,5 +3,6 @@
     <pages>
         <page name='Optionals'/>
         <page name='Control-Flows'/>
+        <page name='Function-Construction'/>
     </pages>
 </playground>

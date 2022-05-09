@@ -55,4 +55,4 @@ var stringInterpolationSyntax: String = "bananas"
 print ("I like \(stringInterpolationSyntax)")
 
 var stringInterpolationConversionSyntax: Int = 123
-print ("I like to eat: \(stringInterpolationConversionSyntax) \(stringInterpolationSyntax) ")
+print ("I like to eat: \(stringInterpolationConversionSyntax) \(stringInterpolationSyntax ) ")
