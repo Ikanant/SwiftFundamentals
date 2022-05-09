@@ -44,3 +44,15 @@ var bunchOfWords: [String] = ["one", "random", "car", "coffee"];
 for word in bunchOfWords {
     print(word)
 }
+
+// The range inclusive
+for randomVarName in 1..<10 {
+    print (randomVarName)
+}
+
+
+var stringInterpolationSyntax: String = "bananas"
+print ("I like \(stringInterpolationSyntax)")
+
+var stringInterpolationConversionSyntax: Int = 123
+print ("I like to eat: \(stringInterpolationConversionSyntax) \(stringInterpolationSyntax) ")
