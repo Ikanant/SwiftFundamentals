@@ -6,5 +6,6 @@
         <page name='Function-Construction'/>
         <page name='Types'/>
         <page name='Closures'/>
+        <page name='Classes'/>
     </pages>
 </playground>
