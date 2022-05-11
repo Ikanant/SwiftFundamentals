@@ -21,7 +21,7 @@ case .music:
 case .movie(let randomPropertyName):
     print("The book genre is \(randomPropertyName)")
 }
-
+print("-----------------------------")
 // STRUCTS
 struct Movie {
     // Properties
@@ -39,10 +39,10 @@ var dune = Movie(name: "Done", yearRelease: 2021, rating: 10, genre: "Action")
  
 print(dune.rating)
 print(dune.summary())
-
+print("-----------------------------")
 // DICTIONARIES
 var airlines: [String: String]
-airlines = ["JB": "JetBlue", "AA": "American Airlines", "D": "Delta"]
+airlines = ["JB ": "JetBlue", "AA": "American Airlines", "D": "Delta"]
 var result: String = airlines["JB"] ?? "NOT FOUND"
 print(result)
 print("Dictionary has the key AA: \(airlines["AA"] != nil)")
@@ -54,3 +54,23 @@ print("Dictionary has the key AA: \(airlines["AA"] != nil)")
 for (myKey, myValue) in airlines {
     print("Key value pair is: \(myKey) with \(myValue)")
 }
+print("-----------------------------")
+
+// Don't need to specify the label of my returned tuple
+func randomFunction() -> (String, year: Int) {
+    let title = "Random title"
+    let year = 123
+    
+    return (title, year)
+}
+
+var one = randomFunction()
+print ("First: \(one.0) and \(one.1)")
+print ("First: \(one.0) and \(one.year)")
+
+var (two, three) = randomFunction()
+print(two)
+print(three)
+
+var (_, five) = randomFunction()
+print(five)
