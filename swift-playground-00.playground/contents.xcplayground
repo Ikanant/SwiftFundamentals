@@ -4,5 +4,6 @@
         <page name='Optionals'/>
         <page name='Control-Flows'/>
         <page name='Function-Construction'/>
+        <page name='Types'/>
     </pages>
 </playground>
