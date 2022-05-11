@@ -21,3 +21,20 @@ case .music:
 case .movie(let randomPropertyName):
     print("The book genre is \(randomPropertyName)")
 }
+
+struct Movie {
+    // Properties
+    var name: String
+    var yearRelease: Int
+    var rating = 0
+    var genre: String
+    
+    // Methods
+    func summary () -> String {
+        return "My movie \(name) was release in \(yearRelease) and got a score of \(rating) even though it was a \(genre) movie!"
+    }
+}
+var dune = Movie(name: "Done", yearRelease: 2021, rating: 10, genre: "Action")
+ 
+print(dune.rating)
+print(dune.summary())
