@@ -7,5 +7,6 @@
         <page name='Types'/>
         <page name='Closures'/>
         <page name='Classes'/>
+        <page name='Protocols'/>
     </pages>
 </playground>
